@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Show_Add" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,87 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jeremy-bishop-262119.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-zp-QSL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xH-Xl-etE">
+                                <rect key="frame" x="87" y="50" width="201.5" height="50.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TAJ-DU-Jmb">
+                                <rect key="frame" x="137.5" y="120.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="uRE-Pi-HId"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJY-WF-oSg">
+                                <rect key="frame" x="155" y="181" width="65" height="119.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4nO-i3-IdM">
+                                <rect key="frame" x="137" y="330.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9oV-fd-HmC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrf-As-mTe">
+                                <rect key="frame" x="257" y="330" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lHj-5X-OuR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6r-60-9cX">
+                                <rect key="frame" x="129" y="390.5" width="116" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pJY-WF-oSg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Ge-0u-fjd"/>
+                            <constraint firstItem="4nO-i3-IdM" firstAttribute="top" secondItem="pJY-WF-oSg" secondAttribute="bottom" constant="30" id="7xf-h0-zJx"/>
+                            <constraint firstItem="5xH-Xl-etE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="AZg-Cm-1i9"/>
+                            <constraint firstItem="TAJ-DU-Jmb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B3h-zT-tcn"/>
+                            <constraint firstItem="TAJ-DU-Jmb" firstAttribute="top" secondItem="5xH-Xl-etE" secondAttribute="bottom" constant="20" id="CUB-Ph-Ixj"/>
+                            <constraint firstItem="E6r-60-9cX" firstAttribute="top" secondItem="4nO-i3-IdM" secondAttribute="bottom" constant="30" id="HEf-IQ-ZuP"/>
+                            <constraint firstItem="rrf-As-mTe" firstAttribute="top" secondItem="5xH-Xl-etE" secondAttribute="bottom" constant="229.5" id="IAI-ws-hjE"/>
+                            <constraint firstItem="5xH-Xl-etE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tmn-NK-VDH"/>
+                            <constraint firstItem="pJY-WF-oSg" firstAttribute="top" secondItem="TAJ-DU-Jmb" secondAttribute="bottom" constant="30" id="YTE-gi-KbL"/>
+                            <constraint firstItem="pJY-WF-oSg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yf0-nS-ZS9"/>
+                            <constraint firstItem="E6r-60-9cX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n5p-Fk-6tJ"/>
+                            <constraint firstItem="4nO-i3-IdM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nyz-GD-lUk"/>
+                            <constraint firstItem="rrf-As-mTe" firstAttribute="leading" secondItem="4nO-i3-IdM" secondAttribute="trailing" constant="20" id="yjm-XG-6a3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerOutlet" destination="E6r-60-9cX" id="xxR-Tu-L0H"/>
+                        <outlet property="xOutlet" destination="TAJ-DU-Jmb" id="t6k-Qy-cza"/>
+                        <outlet property="yOutlet" destination="4nO-i3-IdM" id="3Ti-S5-zlI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="jeremy-bishop-262119.jpg" width="5472" height="3648"/>
+    </resources>
 </document>

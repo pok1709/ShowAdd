@@ -12,6 +12,8 @@
 		284D23361F63AC1C007EB1FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284D23341F63AC1C007EB1FC /* Main.storyboard */; };
 		284D23381F63AC1C007EB1FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284D23371F63AC1C007EB1FC /* Assets.xcassets */; };
 		284D233B1F63AC1C007EB1FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284D23391F63AC1C007EB1FC /* LaunchScreen.storyboard */; };
+		284D23431F63C053007EB1FC /* joshua-newton-311375.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 284D23421F63C053007EB1FC /* joshua-newton-311375.jpg */; };
+		284D23451F63C279007EB1FC /* jeremy-bishop-262119.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 284D23441F63C279007EB1FC /* jeremy-bishop-262119.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		284D23371F63AC1C007EB1FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		284D233A1F63AC1C007EB1FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		284D233C1F63AC1C007EB1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284D23421F63C053007EB1FC /* joshua-newton-311375.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "joshua-newton-311375.jpg"; sourceTree = "<group>"; };
+		284D23441F63C279007EB1FC /* jeremy-bishop-262119.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jeremy-bishop-262119.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		284D232F1F63AC1C007EB1FC /* Show Add */ = {
 			isa = PBXGroup;
 			children = (
+				284D23441F63C279007EB1FC /* jeremy-bishop-262119.jpg */,
+				284D23421F63C053007EB1FC /* joshua-newton-311375.jpg */,
 				284D23301F63AC1C007EB1FC /* AppDelegate.swift */,
 				284D23321F63AC1C007EB1FC /* ViewController.swift */,
 				284D23341F63AC1C007EB1FC /* Main.storyboard */,
@@ -123,8 +129,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284D23451F63C279007EB1FC /* jeremy-bishop-262119.jpg in Resources */,
 				284D233B1F63AC1C007EB1FC /* LaunchScreen.storyboard in Resources */,
 				284D23381F63AC1C007EB1FC /* Assets.xcassets in Resources */,
+				284D23431F63C053007EB1FC /* joshua-newton-311375.jpg in Resources */,
 				284D23361F63AC1C007EB1FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
